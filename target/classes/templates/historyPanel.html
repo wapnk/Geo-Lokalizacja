@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Strona główna</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}" />
+  <script th:src="@{/webjars/jquery/3.2.1/jquery.min.js}"></script>
+  <script th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <a href="/getHistoryList" class="btn btn-default"><label th:text="#{history.all.history}"/></a>
+  </div>
+
+  <div class="row">
+    <a href="/getHistoryById" class="btn btn-default"><label th:text="#{history.by.id}"/></a>
+  </div>
+
+</div>
+</body>
+</html>
